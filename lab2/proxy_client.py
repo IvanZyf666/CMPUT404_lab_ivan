@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-import socket
+import socket, time
+from multiprocessing import Process
+from multiprocessing import Pool
 
 #define address, buffer size
 
@@ -41,7 +43,16 @@ def connect(addr):
 
 def main():
     connect((get_remote_ip(HOST),PORT))
+    
 
 if __name__ == "__main__":
     main()
+    
+    """ TODO: how to use multiprocessing to get 10 times run?
+    p = Process(target=main)
+    p.daemon = True
+    p.start()
+    time.sleep(2)
+    print("Started process", p)
+    """
 
