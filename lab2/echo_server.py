@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import socket
 import time
-from multiprocessing import Process
 
 #define address & buffer size
 HOST = ""
@@ -36,10 +35,8 @@ def main():
             conn, addr = s.accept()
 
             #multiprocessing to handle multi echo
-            p = Process(target=handleEcho, args=(conn, addr))
-            p.daemon = True
-            p.start()
-            print("Started process", p)
+            handleEcho(conn, addr)
+            
             
         
 

@@ -63,9 +63,12 @@ def main():
                 #connect proxy_end
                 proxy_end.connect((remote_ip, port))
                 
-                #handle the request from client
-                handleRequest(conn, addr, proxy_end)
+                p = Process(target=handleRequest, args=(conn, addr, proxy_end))
+                p.daemon = True
+                p.start()
+                print("Started process", p)
                 
+
             
             conn.close()
 

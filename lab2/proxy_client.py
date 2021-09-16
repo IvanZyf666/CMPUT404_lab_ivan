@@ -48,11 +48,4 @@ def main():
 if __name__ == "__main__":
     main()
     
-    """ TODO: how to use multiprocessing to get 10 times run?
-    p = Process(target=main)
-    p.daemon = True
-    p.start()
-    time.sleep(2)
-    print("Started process", p)
-    """
 

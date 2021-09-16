@@ -29,5 +29,7 @@ Q6:
 https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/proxy_client.py
 https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/proxy_server.py
 https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/echo_server.py
-
+https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/multi_echo_server.py
+https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/multi_proxy_client.py
+https://github.com/IvanZyf666/CMPUT404_lab_ivan/blob/main/lab2/multi_proxy_server.py
 
