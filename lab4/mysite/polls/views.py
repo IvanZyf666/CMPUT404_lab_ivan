@@ -37,6 +37,7 @@ from .models import Question
 # ...
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
+    #print(question,"haha")
     return render(request, 'polls/detail.html', {'question': question})
 # ...
 # def detail(request, question_id):
